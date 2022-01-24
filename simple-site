@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Site Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="simple.css">
+</head>
+<body>
+    <header>
+        <h1> Learn With Leon & Friends</h1>
+            <ul>
+                <li>About Us</li>
+                <li><a href="">Portfolio</a></li>
+            </ul>
+    </header>
+    <section>
+        <h2> About Us</h2>
+        <img src="logo.png"> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+</body>
+<footer>
+    <ul>
+        <li><a href="">Twitch</a></li> 
+        <li><a href="">Twitter</a></li>
+        <li><a href="">YouTube</a></li>
+    </ul>
+</footer>
+</html>
+
+#CSS
+body{
+    background: rgb(133, 198, 238);
+    border: rgb(54, 209, 54) 4px solid;
+    margin: 1.5em;
+    padding: 20px; 
+}
+h1{
+    font-family: "serif"; 
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-weight: 200;
+}
+
+ul{ 
+    font-size: small;
+    text-align: center;
+    list-style-type: none;
+
+}
+li{
+    display: inline;
+    color: white; 
+    font-family: "roboto";
+}
+a{
+    color:limegreen;
+}
+
+h2{
+    font-family: "roboto";
+    font-size: 20px;
+    color: white;
+    text-align: left;
+ 
+}
+
+p{
+    font-size: smaller;
+    color: white;
+    text-align: left;
+    line-height: 20px; 
+}
+
+img{
+    float: right; 
+    right: 20 px;
+    max-height: 205px;
+    width: auto; 
+}
+section{
+    padding: 1em;
+}
