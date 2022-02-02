@@ -47,3 +47,15 @@ section{
     width: 33.3333%; 
     float: left;
 }
+@media screen and (max-width: 1500px) {
+    section {
+        background-color: purple;}
+}
+@media screen and (max-width: 1200px) {
+    header, footer {
+        background-color: purple;}
+}
+@media screen and (max-width: 1000px) {
+    section {
+        background-color: darkred;}
+}
