@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Blank Template</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#">CLASSES</a></li>
+					<li><a href="#">HIRE US</a></li>
+				</ul>
+				<img src="#" alt="LG logo">
+				<a href="#">DONATE</a>
+			</nav>
+		</header>
+		<main>
+			<h1>WHERE GRIT MEETS OPPORTUNITY</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error non possimus enim, architecto minima illo, dicta ipsam mollitia facilis magni dolores, ut similique. Incidunt, eos.</p>
+			<a href="#">Watch the Video</a>
+		</main>
+		<section>
+			<h2>WHY</h2>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde corporis modi quas rerum consectetur natus praesentium nihil. Numquam nobis, asperiores doloribus id officia rem, ducimus ullam similique perferendis, eligendi temporibus nisi facilis tempore necessitatibus eum?</p>
+		</section>
+		<section>
+			<section>
+				<img src="#" alt="photo 1">
+				<h3>VISIT THE GYM</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat minus temporibus fuga veniam adipisci corporis quisquam nam. Eum, nulla quasi quas magni doloribus repellendus repellat molestias doloremque inventore neque itaque voluptate repudiandae rerum labore aliquam!</p>
+				<a href="#">SEE CLASSES</a>
+			</section>
+			<section>
+				<img src="#" alt="photo 1">
+				<h3>VISIT THE GYM</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat minus temporibus fuga veniam adipisci corporis quisquam nam. Eum, nulla quasi quas magni doloribus repellendus repellat molestias doloremque inventore neque itaque voluptate repudiandae rerum labore aliquam!</p>
+				<a href="#">SEE CLASSES</a>
+			</section>
+		</section>
+		<section>
+			<h2>VOLUNTEER</h2>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde corporis modi quas rerum consectetur natus praesentium nihil. Numquam nobis, asperiores doloribus id officia rem, ducimus ullam similique perferendis, eligendi temporibus nisi facilis tempore necessitatibus eum?</p>
+			<a href="#">VOLUNTEER</a>
+		</section>
+		<footer>
+			<img src="#" alt="facebook logo">
+			<img src="#" alt="facebook logo">
+			<img src="#" alt="facebook logo">
+			<a href="#">SITE MAP</a>
+			<ul>
+				<li><a href="#">Classes</a></li>
+				<li><a href="#">Classes</a></li>
+			</ul>
+			<a href="#">SITE MAP</a>
+			<ul>
+				<li><a href="#">Classes</a></li>
+				<li><a href="#">Classes</a></li>
+			</ul>
+			<section>
+				<h4>Level Ground Mixed Martial Arts</h4>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</section>
+			<section>
+				<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, eius.</span>
+				<img src="#" alt="LG logo">
+			</section>
+		</footer>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
+
+#CSS
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header nav > *{
+  width: 10%;
+  height: 50px;
+  float: left;
+  background: grey; 
+  color:white; 
+}
+header nav li {
+  width: 25%;
+  float: left;
+}
+main{
+  float: left;
+  height: 200px;
+  background: grey;
+  color: white;
+}
+main h1, p, a{
+  width: 50%;
+}
+
+main + section {
+  color: black;
+  float: left;
+  background: white;
+  width: 100%; 
+}
+section + section {
+  color: black;
+  float: left;
+  background: white;
+  width: 100%; 
+}
+
+section > section{
+  color: black;
+  float: left;
+  background: lightgrey;
+  width: 50%; 
+}
+footer *{
+float: left;
+background: black;
+color: white;
+width: 10%; 
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
