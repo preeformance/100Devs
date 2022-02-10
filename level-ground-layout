@@ -111,24 +111,50 @@ body {
 /* LAYOUT
 /*******************************************/
 header nav > *{
-  width: 10%;
+  width: 30%;
   height: 50px;
   float: left;
   background: grey; 
   color:white; 
 }
-header nav li {
-  width: 25%;
+header nav ul li {
+  width: 100%;
   float: left;
+  list-style: none;
+  color: white;
+  display: inline;
+}
+header nav img {
+  float: left;
+  background: grey; 
+  color:white; 
+  padding: 0 100px; 
+}
+header nav section > a {
+  float: left;
+  background: white; 
+  color:grey; 
+  border: white 2px solid; 
+  border-radius: 8px; 
+  padding: 4px; 
+}
+header {
+  float: left;
+  background: grey; 
+  color:white; 
+  padding: 10px; 
 }
 main{
   float: left;
   height: 200px;
   background: grey;
   color: white;
+  text-align: center;
+  width: auto; 
 }
-main h1, p, a{
+main h1, p, a, h2{
   width: 50%;
+  text-align: center;
 }
 
 main + section {
@@ -141,7 +167,12 @@ section + section {
   color: black;
   float: left;
   background: white;
-  width: 100%; 
+  width: 100%;  
+
+}
+section + section *{
+  align-content: center;
+  align-items: center;
 }
 
 section > section{
@@ -150,11 +181,33 @@ section > section{
   background: lightgrey;
   width: 50%; 
 }
+
+footer {
+  float: left;
+  background: black;
+  color: white;
+
+  }
+footer + section {
+  float: left;
+  background: black;
+  color: white;
+}
 footer *{
 float: left;
 background: black;
 color: white;
 width: 10%; 
+}
+footer section + section{
+  float: left;
+  background: black;
+  color: white;
+  display: inline;
+  width: auto; 
+}
+*{
+  width: 700px; 
 }
 
 /******************************************
