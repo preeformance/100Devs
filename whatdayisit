@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This app lets you know today is class, the weekend, or a boring day">
+    	<meta name="keywords" content="class, weekend, boring">
+
+		<title>What is today?</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<h1>What is today?</h1>
+
+		<form>
+			<label for="day"> Day of the week: </label>
+			<input id="day" type="text" placeholder="Day of the week">
+		</form>
+
+		<button id="check" type="button" name="button">check</button>
+
+		<h2 id="placeToSee"></h2>
+
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
+
+#CSS
+/******************************************
+/* HOT GARBAGE - PLEASE DON'T MIMIC THIS CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1, h2, form{
+  text-align: center;
+}
+button{
+  display: block;
+  margin: 20px auto;
+}
+ul{
+  width: 100px;
+  height: 200px;
+  border: 3px solid black;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+li{
+  text-align: center;
+  width: 94px;
+  height: 49px;
+  border: 1px solid black;
+}
+h2{
+  font-size: 100px;
+  color: red;
+  font-weight: bold;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+#JavaScript
+document.querySelector('#check').addEventListener('click', check)
+
+function check() {
+
+  const day = document.querySelector('#day').value
+
+  //Conditionals go here
+if (day === "Tuesday" || day === "Thursday" || day === "thursday" || day === "tuesday") {
+document.querySelector('#placeToSee').innerText = "Class Day"
+}
+else if (day === "Saturday" || day === "Sunday" || day === "sunday"|| day === "saturday") {
+  document.querySelector('#placeToSee').innerText = "Weekend"
+}
+else if(day === "friday" || day === "Friday"){document.querySelector('#placeToSee').innerText = "Date Night"}
+else { 
+  document.querySelector('#placeToSee').innerText = "Boring"
+}
+}
+
+// if (day === "Tuesday"|| day === "Thursday") {
+//   document.querySelector('#placeToSee').innerText = "Class Day"
+// }
+// else if (day === "Saturday") || day === "Sunday") {
+//   document.querySelector('#placeToSee').innerText = "Weekend"
+// }
+// else { 
+//   document.querySelector('#placeToSee').innerText = "Boring"
+// }
+// }
