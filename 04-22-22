@@ -1,0 +1,12 @@
+// 8 kyu Total amount of points
+
+function points(games) {
+  let sum = 0
+  for (let i=0; i<games.length; i++){
+    if (games[i].charAt(0) > games[i].charAt(2)){
+      sum +=3
+    }else if (games[i].charAt(0) == games[i].charAt(2)){
+      sum +=1
+    }
+  }return sum
+}
